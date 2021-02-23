@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import torch
 import torchvision
 import torchvision.transforms as transforms
@@ -22,7 +24,7 @@ def load_cifar10():
         transform=transform)
     trainloader = torch.utils.data.DataLoader(
         trainset,
-        batch_size=4,
+        batch_size=40,
         shuffle=True,
         num_workers=2)
     testset = torchvision.datasets.CIFAR10(
